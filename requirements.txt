@@ -2,8 +2,8 @@
 # $ conda create --name <env> --file <this file>
 # platform: win-64
 
-blas==1.0==mk
-bs4==4.9.3==hd3eb1b0_0
+
+bs4==4.9.3
 ca-certificates==2021.5.25
 certifi==2021.5.30
 click==8.0.1
