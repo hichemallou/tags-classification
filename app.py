@@ -47,6 +47,7 @@ def api_tager():
     tager = Tager(models_path='models/', encoders_path='encoders/')
     txt = request.json['Body'] + ' ' + request.json['Title']
     tags = tager.pridict(txt)
+    print(tags)
     print(request.json)
 
     return  respons(tags[0])
