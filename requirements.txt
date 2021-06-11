@@ -1,13 +1,13 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-beautifulsoup4==4.9.3
+
 blas==1.0==mk
 bs4==4.9.3==hd3eb1b0_0
 ca-certificates==2021.5.25
 certifi==2021.5.30
 click==8.0.1
-flask==1.1.
+flask
 icc_rt==2019.0.0
 importlib-metadata==3.10.0
 intel-openmp==2021.2.0
