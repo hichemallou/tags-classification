@@ -3,7 +3,7 @@ from Tager import *
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources=r'/api/*')
 
 
 
@@ -56,6 +56,8 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Origin', '*')
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+
+    print(response)
     return response
 if __name__ == '__main__':
     app.run(debug=True)
