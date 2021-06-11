@@ -1,10 +1,9 @@
 from flask import *
 from Tager import *
-from flask.ext.cors import CORS, cross_origin
+from flask_cors import CORS
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
-app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 
@@ -41,7 +40,6 @@ def index():
 
 @app.route("/api/tager", methods=['GET', 'POST'])
 def api_tager():
-
     print(request.method)
 
     if request.method == "GET":
@@ -53,6 +51,11 @@ def api_tager():
 
     return  respons(tags[0])
 
-
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+    return response
 if __name__ == '__main__':
     app.run(debug=True)
