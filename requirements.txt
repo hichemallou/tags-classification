@@ -1,0 +1,47 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+beautifulsoup4=4.9.3=pyha847dfd_0
+blas=1.0=mkl
+bs4=4.9.3=hd3eb1b0_0
+ca-certificates=2021.5.25=haa95532_1
+certifi=2021.5.30=py38haa95532_0
+click=8.0.1=pyhd3eb1b0_0
+flask=1.1.2=pyhd3eb1b0_0
+icc_rt=2019.0.0=h0cc432a_1
+importlib-metadata=3.10.0=py38haa95532_0
+intel-openmp=2021.2.0=haa95532_616
+itsdangerous=2.0.1=pyhd3eb1b0_0
+jinja2=3.0.0=pyhd3eb1b0_0
+joblib=1.0.1=pyhd3eb1b0_0
+libiconv=1.15=h1df5818_7
+libxml2=2.9.10=hb89e7f3_3
+libxslt=1.1.34=he774522_0
+lxml=4.6.3=py38h9b66d53_0
+markupsafe=2.0.1=py38h2bbff1b_0
+mkl=2021.2.0=haa95532_296
+mkl-service=2.3.0=py38h2bbff1b_1
+mkl_fft=1.3.0=py38h277e83a_2
+mkl_random=1.2.1=py38hf11a4ad_2
+nltk=3.6.2=pyhd3eb1b0_0
+numpy=1.20.2=py38ha4e8547_0
+numpy-base=1.20.2=py38hc2deb75_0
+openssl=1.1.1k=h2bbff1b_0
+pip=21.1.2=py38haa95532_0
+python=3.8.10=hdbf39b2_7
+regex=2021.4.4=py38h2bbff1b_0
+scikit-learn=0.24.2=py38hf11a4ad_1
+scipy=1.6.2=py38h66253e8_1
+setuptools=52.0.0=py38haa95532_0
+six=1.15.0=py38haa95532_0
+soupsieve=2.2.1=pyhd3eb1b0_0
+sqlite=3.35.4=h2bbff1b_0
+threadpoolctl=2.1.0=pyh5ca1d4c_0
+tqdm=4.59.0=pyhd3eb1b0_1
+vc=14.2=h21ff451_1
+vs2015_runtime=14.27.29016=h5e58377_2
+werkzeug=1.0.1=pyhd3eb1b0_0
+wheel=0.36.2=pyhd3eb1b0_0
+wincertstore=0.2=py38_0
+zipp=3.4.1=pyhd3eb1b0_0
+zlib=1.2.11=h62dcd97_4
