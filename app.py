@@ -1,9 +1,10 @@
 from flask import *
 from Tager import *
-from flask_restful import Api, reqparse
+from flask.ext.cors import CORS, cross_origin
 
 app = Flask(__name__)
-api = Api(app)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 
