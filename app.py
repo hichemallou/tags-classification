@@ -1,9 +1,9 @@
 from flask import *
 from Tager import *
-from flask_cors import CORS
+from flask_restful import Api, reqparse
 
 app = Flask(__name__)
-CORS(app, resources=r'/api/*')
+api = Api(app)
 
 
 
@@ -40,6 +40,7 @@ def index():
 
 @app.route("/api/tager", methods=['GET', 'POST'])
 def api_tager():
+
     print(request.method)
 
     if request.method == "GET":
@@ -51,13 +52,6 @@ def api_tager():
 
     return  respons(tags[0])
 
-@app.after_request
-def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
 
-    print(response)
-    return response
 if __name__ == '__main__':
     app.run(debug=True)
