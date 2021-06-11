@@ -1,8 +1,11 @@
 from flask import *
 from Tager import *
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
+
 
 
 def noUnauthorized():

@@ -8,3 +8,4 @@ flask
 lxml
 scikit-learn
 nltk
+flask-cors
