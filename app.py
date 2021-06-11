@@ -42,8 +42,8 @@ def index():
 def api_tager():
     print(request.method)
 
-    if request.method == "GET":
-        return noUnauthorized()
+    # if request.method == "GET":
+    #     return noUnauthorized()
     tager = Tager(models_path='models/', encoders_path='encoders/')
     txt = request.json['Body'] + ' ' + request.json['Title']
     tags = tager.pridict(txt)
